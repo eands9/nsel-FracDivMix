@@ -188,11 +188,11 @@ class ViewController: UIViewController {
     func getSimplifiedAnswer(){
         switch randomIndex{ //0 = Only Frac B is mixed frac; 1 = Only Frac A is mixed; 2 = both are mixed)
         case 0://adding whole numD ONLY
-            answerCorrect = (Double(numD) + (Double(numA)/Double(denA))) * (Double(numB)/Double(denB))
+            answerCorrect = (Double(numD) + (Double(numA)/Double(denA))) / (Double(numB)/Double(denB))
         case 1://adding whole numE ONLY
-            answerCorrect = (Double(numA)/Double(denA)) * (Double(numE) + (Double(numB)/Double(denB)))
+            answerCorrect = (Double(numA)/Double(denA)) / (Double(numE) + (Double(numB)/Double(denB)))
         case 2://adding both whole D & E
-            answerCorrect =  (Double(numD) + (Double(numA)/Double(denA))) * (Double(numE) + (Double(numB)/Double(denB)))
+            answerCorrect =  (Double(numD) + (Double(numA)/Double(denA))) / (Double(numE) + (Double(numB)/Double(denB)))
         default:
             answerCorrect = 9.99
         }
